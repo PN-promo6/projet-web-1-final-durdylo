@@ -1,0 +1,369 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.colorOrange {
+  color: #F5AA25;
+}
+
+body html {
+  height: 100%;
+  width: 100%;
+  background-color: #
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: ease 0.5s;
+}
+
+body {
+  background-color: #EFE1C8;
+  margin: 0;
+}
+
+img {
+  max-width: 100%
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+}
+
+/* Navigation */
+nav {
+  background-color: #0C0416;
+  margin: 0;
+  color: #F5AA25;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#logoHeader {
+  width: 203px;
+}
+
+#burger-menu {
+  display: none;
+  padding: 0px;
+}
+
+.main-nav {
+  background-color: #0C0416;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.main-nav nav, .main-nav .nav-links ul {
+  display: flex
+}
+
+.main-nav li {
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.logo-container {
+  margin-left: 37px
+}
+
+.main-nav nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav .nav-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav .nav-links a {
+  color: #F5AA25;
+}
+
+.icons-nav {
+  color: #F5AA25;
+  font-size: 30px;
+}
+
+/* header */
+header {
+  background-color: #FAF8F4;
+  color: #F4AC2C;
+  position: relative;
+  height: 357px;
+  margin: 72px 50px 0px 50px
+}
+
+header h1 span {
+  color: #0C0416;
+}
+
+.headerContain img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.headerContain h1 {
+  position: absolute;
+  top: 10px;
+  left: 26px;
+  font-size: 43px;
+  margin: 0;
+  color: black;
+}
+
+.headerContain #ctaHeader {
+  background-color: #F4AC2C;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 43px;
+  line-height: 56px;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 10px 15px;
+  width: 519px;
+  height: 91px;
+  left: 26px;
+  bottom: 19px;
+}
+
+/* text of resume website */
+.resumeWebSite {
+  height: 195px;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* product row  and products*/
+.product-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 26px 15px 0px 15px;
+  padding: 0px 15px;
+}
+
+.product {
+  background: #FAF8F4;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.35);
+  position: relative;
+  width: 452px;
+  height: 198px;
+}
+
+.product:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: ease 0.5s;
+}
+
+.product img {
+  padding: 29px 0px 0px 39px;
+  position: relative;
+}
+
+.textProduct {
+  position: absolute;
+  right: 33px;
+  text-align: center;
+  top: 10px;
+  font-size: 20px;
+  height: 40px;
+  width: 170px;
+}
+
+.favoriteMacaron {
+  background-color: #E98A15;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left: 181px;
+  z-index: 1;
+}
+
+.ctaProduct {
+  background-color: #F5AA25;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  width: 180px;
+  height: 42px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  right: 35px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#ctaHeader:hover, .ctaProduct:hover {
+  background-color: #F7C265;
+  transition: ease 1s;
+}
+/* add */
+.add {
+  width: 100%;
+  height: 291px;
+  background-color: #F4AC2C;
+  font-weight: bold;
+  margin: 0;
+}
+
+.addStrong {
+  font-size: 48px;
+}
+
+.addSpan {
+  font-size: 36px;
+}
+
+.cw {
+  color: white;
+}
+
+.header, .resumeWebSite {
+  margin: 0px 30px;
+}
+
+.add #ctaADD {
+  width: 268px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 15px;
+  text-align: center;
+  padding: 0;
+  font-size: 24px;
+  background-color: white;
+}
+
+.add #ctaADD a {
+  color: #F5AA25;
+}
+
+.add p {
+  padding-left: 15px;
+}
+
+/* icons row */
+.icons-row, .icon {
+  display: flex;
+}
+
+.icons-row {
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.icon {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon p {
+  font-size: 18px;
+}
+
+/* main footer */
+footer {
+  height: 391px;
+  background-color: #0C0416;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-footer {
+  color: #C8C8C8;
+}
+/* start of the form */
+.form form {
+  padding: 16px 0;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.form label, .form textarea, .form input {
+  display: block;
+  width: 100%
+}
+
+.form label {
+  margin-bottom: 8px;
+  color: white;
+}
+
+.form input, .form textarea {
+  color: white;
+  margin-bottom: 16px;
+  background: none;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  padding: 8px 0;
+}
+
+.form textarea {
+  border-width: 1px;
+}
+
+.form input[type=submit] {
+  width: auto;
+  cursor: pointer;
+  padding: 8px;
+  margin: auto;
+  border: 0;
+  background-color: #F4AC2C;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+/* end of the form */
+
+.text-footer {
+  color: white;
+}
+
+/*  */
+.go-top {
+  position: fixed;
+  bottom: 2px;
+  right: 5px;
+  font-size: 120px;
+}
+
+.go-top a {
+  color: black;
+}
