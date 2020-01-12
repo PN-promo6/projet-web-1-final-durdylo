@@ -3,18 +3,42 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.47rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.bodyContainer {
+  width: 100%;
+  text-align: left;
+}
+
 .strong {
   font-weight: 700;
 }
 
-.colorOrange {
+.colorOrange  {
   color: #F5AA25;
 }
 
 body html {
   height: 100%;
   width: 100%;
-  background-color: #
 }
 
 a {
@@ -27,7 +51,7 @@ a:hover {
 }
 
 body {
-  background-color: #EFE1C8;
+  background-color: #F6EEE1;
   margin: 0;
 }
 
@@ -40,10 +64,11 @@ img {
   margin: 0 auto;
   position: fixed;
 }
-
+nav, .main-nav,footer{
+  background-color: #0C0416;
+}
 /* Navigation */
 nav {
-  background-color: #0C0416;
   margin: 0;
   color: #F5AA25;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -59,7 +84,6 @@ nav {
 }
 
 .main-nav {
-  background-color: #0C0416;
   position: fixed;
   top: 0;
   z-index: 2;
@@ -71,10 +95,7 @@ nav {
 
 .main-nav li {
   display: inline-block;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 4% 7%;
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
@@ -108,8 +129,8 @@ header {
   background-color: #FAF8F4;
   color: #F4AC2C;
   position: relative;
-  height: 357px;
-  margin: 72px 50px 0px 50px
+  height: 41vh;
+  margin: 4% 2% 0% 2%;
 }
 
 header h1 span {
@@ -118,15 +139,15 @@ header h1 span {
 
 .headerContain img {
   position: absolute;
+  height: 100%;
   right: 0px;
   bottom: 0px;
 }
 
 .headerContain h1 {
   position: absolute;
-  top: 10px;
-  left: 26px;
-  font-size: 43px;
+  top: 1%;
+  left: 1.5%;
   margin: 0;
   color: black;
 }
@@ -135,42 +156,43 @@ header h1 span {
   background-color: #F4AC2C;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 43px;
-  line-height: 56px;
+  font-size: 2.8rem;
   text-align: center;
   color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  padding: 10px 15px;
-  width: 519px;
-  height: 91px;
-  left: 26px;
-  bottom: 19px;
+  padding: 1% 1.5%;
+  height: 20%;
+  left: 1.5%;
+  bottom: 3%;
 }
 
 /* text of resume website */
-.resumeWebSite {
-  height: 195px;
-  font-size: 36px;
+.resumeWebSite{
+  margin: 2%;
+}
+.resumeWebSite h2 {
   text-align: center;
+  font-weight: normal;
 }
 
-/* product row  and products*/
-.product-row {
+/* product row and products*/
+.product-row, .product,.textProduct,.favoriteMacaron,.ctaProduct  {
   display: flex;
-  justify-content: space-around;
-  margin: 26px 15px 0px 15px;
-  padding: 0px 15px;
+}
+.product-row {
+  justify-content: space-between;
+  margin: 2%;
 }
 
 .product {
   background: #FAF8F4;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.35);
+  width: 27%;
   position: relative;
-  width: 452px;
-  height: 198px;
+  align-items: center;
 }
 
 .product:hover {
@@ -178,52 +200,62 @@ header h1 span {
   transition: ease 0.5s;
 }
 
-.product img {
-  padding: 29px 0px 0px 39px;
-  position: relative;
+.product-img {
+  width: 50%;
+  padding-top: 2%;
+}
+
+.product .product-img img {
+  height: 86%;
+  display: block;
+  margin: 0 auto;
 }
 
 .textProduct {
-  position: absolute;
-  right: 33px;
+  padding-top: 2%;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  top: 10px;
-  font-size: 20px;
-  height: 40px;
-  width: 170px;
+  width: 50%;
+  margin: 0px;
+}
+
+.textProduct h3 {
+  font-weight: normal;
+  margin: 0%
+}
+
+.price {
+  margin: 0px;
+  padding: 4% 0%;
+  font-weight: bold;
 }
 
 .favoriteMacaron {
   background-color: #E98A15;
-  width: 33px;
-  height: 33px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-weight: bold;
-  position: absolute;
-  top: 15px;
-  left: 181px;
   z-index: 1;
+  position: absolute;
+  left: 39%;
+  top: 7%;
 }
 
 .ctaProduct {
+  font-weight: bold;
+  padding: 5% 5%;
   background-color: #F5AA25;
   border-radius: 5px;
   color: white;
-  font-size: 18px;
-  width: 180px;
-  height: 42px;
   text-align: center;
-  display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 10px;
-  right: 35px;
-  font-weight: bold;
+  border-style: none;
   font-size: 16px;
 }
 
@@ -231,17 +263,21 @@ header h1 span {
   background-color: #F7C265;
   transition: ease 1s;
 }
+
 /* add */
 .add {
-  width: 100%;
-  height: 291px;
   background-color: #F4AC2C;
   font-weight: bold;
-  margin: 0;
+  padding: 1% 0%;
+  margin: 2% 0%;
+}
+
+p {
+  margin: 0px;
 }
 
 .addStrong {
-  font-size: 48px;
+  margin: 0.5% 2%;
 }
 
 .addSpan {
@@ -252,27 +288,14 @@ header h1 span {
   color: white;
 }
 
-.header, .resumeWebSite {
-  margin: 0px 30px;
-}
-
 .add #ctaADD {
-  width: 268px;
-  height: 40px;
+  margin: 1% 0% 0% 2%;
+  padding: 0.3% 1%;
   border-radius: 5px;
-  margin-left: 15px;
   text-align: center;
-  padding: 0;
   font-size: 24px;
   background-color: white;
-}
-
-.add #ctaADD a {
   color: #F5AA25;
-}
-
-.add p {
-  padding-left: 15px;
 }
 
 /* icons row */
@@ -282,7 +305,7 @@ header h1 span {
 
 .icons-row {
   justify-content: space-around;
-  margin-top: 15px;
+  margin: 2%;
 }
 
 .icon {
@@ -291,29 +314,38 @@ header h1 span {
   align-items: center;
 }
 
-.icon p {
-  font-size: 18px;
+.icon h4 {
+  margin-bottom: 1%;
+}
+
+.icon img {
+  height: 7vh;
 }
 
 /* main footer */
-footer {
-  height: 391px;
-  background-color: #0C0416;
-}
 
 .footer-container {
   display: flex;
   justify-content: space-around;
+  padding: 2%;
 }
 
 .title-footer {
+  margin: 8% 0%;
   color: #C8C8C8;
 }
+.about,.form,.referencing{
+  width: 30%
+}
+.text-footer a{
+  margin-bottom: 4%;
+}
 /* start of the form */
+
+
 .form form {
   padding: 16px 0;
   margin: 0 auto;
-  max-width: 300px;
 }
 
 .form label, .form textarea, .form input {
@@ -322,18 +354,18 @@ footer {
 }
 
 .form label {
-  margin-bottom: 8px;
+  margin-bottom: 1%;
   color: white;
 }
 
 .form input, .form textarea {
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 3.5%;
   background: none;
   border-color: white;
   border-style: solid;
   border-width: 0 0 1px 0;
-  padding: 8px 0;
+  padding: 2% 0;
 }
 
 .form textarea {
@@ -343,25 +375,23 @@ footer {
 .form input[type=submit] {
   width: auto;
   cursor: pointer;
-  padding: 8px;
   margin: auto;
   border: 0;
   background-color: #F4AC2C;
-  padding: 10px 15px;
+  padding: 4% 4.5%;
   border-radius: 5px;
 }
-/* end of the form */
 
 .text-footer {
+  font-weight: normal;
   color: white;
 }
 
-/*  */
 .go-top {
   position: fixed;
-  bottom: 2px;
-  right: 5px;
-  font-size: 120px;
+  bottom: 0.5%;
+  right: 0.5%;
+  font-size: 5rem;
 }
 
 .go-top a {
